@@ -1,0 +1,30 @@
+.count {
+    display: flex;
+  
+  
+    &__cont {
+      width: 40px;
+      height: 30px;
+      background-color: #EAEFF2;
+      border-radius: 3px;
+    }
+  
+    &__input {
+      background-color: transparent;
+      padding-top: 7px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    &__btn {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 9px;
+  
+      & button img {
+        display: block;
+      }
+    }
+  }

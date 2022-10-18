@@ -1,0 +1,34 @@
+@import "./../App/vars.scss";
+.cart-footer {
+    background-color: #EAEFF2;
+    height: $h;
+    font-weight: $fw2;
+    display: grid;
+    grid-template-columns: 5fr repeat(2, 3fr) 1fr;
+    align-items: center;
+    column-gap: 30px;
+  
+    @media screen and (max-width: ($md4 + px)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+    &__count {
+      grid-column-start: 2;
+  
+      @media screen and (max-width: ($md4 + px)) {
+        grid-column-start: 1;
+        text-align: center;
+      }
+      
+    }
+  
+    &__price {
+      grid-column-start: 3;
+  
+      @media screen and (max-width: ($md4 + px)) {
+        grid-column-start: 2;
+        text-align: center;
+      }
+    }
+  }

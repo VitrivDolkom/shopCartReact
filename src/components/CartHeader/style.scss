@@ -1,0 +1,32 @@
+@import "./../App/vars.scss";
+.cart-header {
+    column-gap: 30px;
+  
+    background-color: #EAEFF2;
+    height: $h;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: $fw;
+    display: grid;
+    letter-spacing: 0.2em;
+  
+    grid-template-columns: 1fr repeat(3, 3fr) 1fr;
+    align-items: center;
+  
+    @media screen and (max-width: ($md4 + px)) {
+      display: none;
+    }
+  
+    &__name {
+      grid-column-start: 2;
+    }
+  
+    &__count {
+      grid-column-start: 3;
+  
+    }
+  
+    &__price {
+      grid-column-start: 4;
+    }
+  }
